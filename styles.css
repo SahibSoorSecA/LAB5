@@ -10,6 +10,10 @@
 
 h1 {font-family: "Danfo";
     font-size: 100px;
+    background-color: #333;
+    color: #0075F2;
+    padding: 10px 0;
+    text-align: center;
 
 }
 
@@ -19,4 +23,37 @@ h1 {font-family: "Danfo";
     font-style: normal;
   }
 
-nav {font-family: "PT Mono";}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "PT Mono";
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav a {
+    display: block;
+    font-size: 75px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #0075F2;
+}
