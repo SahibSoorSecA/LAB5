@@ -8,7 +8,8 @@
     "ELSH" 0;
 }
 
-h1 {font-family: "Danfo";
+h1 {
+    font-family: "Danfo";
     font-size: 100px;
     background-color: #333;
     color: #0075F2;
@@ -16,6 +17,15 @@ h1 {font-family: "Danfo";
     text-align: center;
 
 }
+.custom-text {
+    background: linear-gradient(to right, #0075F2, #797979);
+    color: rgb(246, 246, 246);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0);}
 
 .pt-mono-regular {
     font-family: "PT Mono", monospace;
@@ -47,7 +57,7 @@ nav li {
 
 nav a {
     display: block;
-    font-size: 75px;
+    font-size: 50px;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
@@ -56,4 +66,69 @@ nav a {
 nav a:hover {
     background-color: #555;
     color: #0075F2;
+}
+section {display: flex;
+justify-content: space-around;}
+
+img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.accordion 
+
+{font-family: "PT Mono";
+border: 1px solid #0075F2;
+}
+
+.acctitle {padding: 10px;
+    font-family: "PT Mono";
+    cursor: pointer;
+    display: block;
+    }
+.content {display: none;
+    padding: 10px;
+    text-align:justify ;
+    word-spacing: normal;
+    font-size: xx-large;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label + .content {
+    display: block;
+}
+.acctitle { 
+    font-family: "Danfo";
+    font-size: 30px;
+    background-color: #333;
+    color: #0075F2;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.acctitle:hover {
+    background-color: #555;
+    color: #0075F2;
+}
+
+
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    animation: slidein 2s forwards;
 }
